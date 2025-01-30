@@ -1,0 +1,127 @@
+main .profile {
+  display: flex;
+  flex-direction: row;
+}
+
+#profile-display,
+#profile-info {
+  height: 100vh;
+}
+
+#profile-display {
+  min-width: 40vw;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/bg/me.jpeg);
+}
+
+#profile-info {
+  gap: 2rem;
+  flex-grow: 1;
+  display: flex;
+  
+  color: #ffffff;
+  overflow-y: scroll;
+  flex-direction: column;
+  background-color: var(--charcoal);
+  padding: 300px 25px 50px 25px;
+}
+
+#profile-info h2 {
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+#profile-info h3 {
+  line-height: 2rem;
+  font-style: italic;
+}
+
+#profile-info .avatar {
+  font-weight: 900;
+  padding: 1rem 2rem;
+  font-size: larger;
+  margin-left: -25px;
+  font-style: italic;
+  background-color: black;
+}
+
+#profile .avatar {
+  color: white;
+  border-radius: 100%;
+  padding: 2rem;
+  margin-left: -50%;
+  margin-right: 50%;
+  background-color: black;
+}
+
+#about p > span {
+  font-weight: 900;
+  padding-right: 1rem;
+}
+
+footer .link {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 100%;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+footer a:hover {
+  padding: 12px 17px;
+}
+
+.mobile-link {
+  display: none;
+}
+
+.web-link {
+  display: inherit;
+}
+
+@media (max-width: 768px) {
+  main .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-display {
+    height: 40vh;
+    min-width: 100vw;
+    background-position: center center;
+  }
+
+  #profile-info {
+    height: auto;
+    overflow-y: inherit;
+    padding-top: 25px;
+  }
+
+  #profile-info .avatar {
+    align-self: center;
+    display: inline-block;
+    background-color: inherit;
+    margin-top: -70px;
+    margin-left: 0;
+    border-radius: 50px;
+    text-align: center;
+    font-size: medium;
+    font-style: normal;
+  }
+
+  .web-link {
+    display: none;
+  }
+
+  .mobile-link {
+    display: inherit;
+  }
+}

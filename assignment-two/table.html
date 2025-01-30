@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment One - HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://learn.altschoolafrica.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-3-100x100.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://learn.altschoolafrica.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-3-300x300.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://learn.altschoolafrica.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-3-300x300.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://learn.altschoolafrica.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-3-300x300.png"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/assignment-main.css" />
+    <link rel="stylesheet" href="../styles/table.css" />
+    <style>
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div>
+          <div class="logo">SOE</div>
+          <nav>
+            <ol>
+              <li>
+                <a href="./">Home</a>
+              </li>
+              <li>
+                <a href="./media.html">Media</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h1>AltSchool Africa Courses</h1>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>School</th>
+                <th>Course</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4">School of Engineering</td>
+                <td>Frontend Engineering</td>
+              </tr>
+              <tr>
+                <td>Backend Engineering</td>
+              </tr>
+              <tr>
+                <td>Cloud Engineering</td>
+              </tr>
+              <tr>
+                <td>Cybersecurity</td>
+              </tr>
+              <tr>
+                <td rowspan="3">School of Product</td>
+                <td>Product Design</td>
+              </tr>
+              <tr>
+                <td>Marketing</td>
+              </tr>
+              <tr>
+                <td>Management</td>
+              </tr>
+              <tr>
+                <td rowspan="3">School of Data</td>
+                <td>Data Analysis</td>
+              </tr>
+              <tr>
+                <td>Data Science</td>
+              </tr>
+              <tr>
+                <td>Data Engineering</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

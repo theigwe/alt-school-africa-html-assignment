@@ -1,0 +1,99 @@
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Fira Sans', serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+
+h1, h2, h3 {
+  text-transform: capitalize;
+}
+
+h1, h2 {
+  line-height: 2rem;
+}
+
+#container {
+  min-height: 100vh;
+}
+
+header {
+  top: 10px;
+  width: 100%;
+  position: fixed;
+  padding: 0 20px;
+}
+
+header > div {
+  gap: 1rem;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: var(--charcoal-light);
+}
+
+.logo {
+  padding: 2px 25px;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+nav {
+  gap: 1rem;
+  display: flex;
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+
+nav ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a:link,
+nav a:visited {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  header > div {
+    padding: 5px 10px;
+  }
+  nav {
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  main {
+    position: relative;
+  }
+
+  main .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+}

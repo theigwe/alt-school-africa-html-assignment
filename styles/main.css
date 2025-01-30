@@ -1,0 +1,86 @@
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Fira Sans', serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+#container {
+  gap: 5rem;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+header {
+  gap: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Noto Sans', serif;
+  font-optical-sizing: auto;
+}
+
+.subtitle {
+  color: var(--text-color-faint);
+  font-weight: 600;
+  font-size: medium;
+}
+
+.assignment-link {
+  font-weight: 600;
+  padding: 4px 25px;
+  border-radius: 5px;
+  text-decoration: solid;
+  text-align: center;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  cursor: url(../assets/icons/cursor-pointer.svg) 2 2, pointer;
+  transition: color 0.5s ease;
+}
+
+.assignment-link:link,
+.assignment-link:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.assignment-link:hover {
+  animation: link-blink 2s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .assignment-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@keyframes link-blink {
+  20% {
+    color: var(--text-color-faint);
+  }
+  70% {
+    color: var(--text-color-very-faint);
+  }
+}
